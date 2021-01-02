@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        <div class="items">10</div>
+        <div class="items">11</div>
+        <div class="items">12</div>
+        <div class="items">13</div>
+        <div class="items">14</div>
+        <div class="items">15</div>
+        <div class="items">16</div>
+        <div class="items">17</div>
+        <div class="items">18</div>
+        <div class="items">19</div>
+       
+    </div>
+    <style>
+        *,*::before , *::after{
+            box-sizing: border-box;
+        }
+        body{
+            padding: 0;
+            margin:0;
+            background-color: skyblue;
+            min-height: 100vh;
+
+        }
+        .container{
+            
+            width: 80vw;
+            margin: 0 auto;
+            height: 65vh;
+            background-color:salmon;
+            padding:1em;
+            display:grid;         
+            grid-template-columns:repeat(4,auto);            
+            grid-template-rows:repeat(5,auto);
+            grid-gap:5px;
+
+        
+            
+        }
+        .items{
+            display:flex;
+            border:1px solid red;
+            background-color: white;
+            justify-content: center;
+            align-items:center;
+        }
+        .items:nth-child(1){
+         
+           grid-column:2/4;
+           grid-row:1/3;
+           
+            
+
+        }
+    </style>
+   
+</body>
+</html>
